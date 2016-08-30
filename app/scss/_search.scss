@@ -1,0 +1,40 @@
+.search {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10%;
+  padding-right: 10%;
+  background: #263238;
+  padding: 1em 2em;
+  .searchForm {
+    flex: 1;
+    text-align: center;
+    input {
+      margin: 1rem;
+    }
+    .browse {
+      flex: 1;
+      margin: auto;
+        align-items: center;
+      form {
+        padding-top: 1rem;
+      }
+    }
+  }
+
+}
+
+
+  .searchLocation {
+    font-size: 1.25rem;
+  }
+  .searchSkill {
+    font-size: 1.25rem;
+  }
+  .searchButton {
+    width: 128px;
+    border-radius: 0.25rem;
+    font-size: 1.5rem;
+  }
+.SearchResults {
+  background: #455A64;
+}

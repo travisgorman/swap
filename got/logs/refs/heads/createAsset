@@ -1,0 +1,9 @@
+0000000000000000000000000000000000000000 ba2a92edf2f98efbdecb38aa8bc48bd4b665cc9d Travis Gorman <thefarbetween@me.com> 1472346085 -0500	branch: Created from HEAD
+ba2a92edf2f98efbdecb38aa8bc48bd4b665cc9d e68c4f26bb91e4ba90552f55a7560abaa6167233 Travis Gorman <thefarbetween@me.com> 1472346139 -0500	commit: offers and asset models
+e68c4f26bb91e4ba90552f55a7560abaa6167233 f8caa4617eb6f1ec6c2aa47a28a02529203c29ed Travis Gorman <thefarbetween@me.com> 1472353213 -0500	commit: post assets to asset collection
+f8caa4617eb6f1ec6c2aa47a28a02529203c29ed f30778942a01a2bcc4d272b2976fd150e235632e Travis Gorman <thefarbetween@me.com> 1472417144 -0500	commit: back to kinvey auth
+f30778942a01a2bcc4d272b2976fd150e235632e 92aa352c40f5b40bfa309698da97aa39e1e9f4db Travis Gorman <thefarbetween@me.com> 1472426599 -0500	commit: fixed authentication - login
+92aa352c40f5b40bfa309698da97aa39e1e9f4db fa5cc93a333e9f8b32c78dc7b5086bad0fd30ff7 Travis Gorman <thefarbetween@me.com> 1472431179 -0500	commit: all authentication works
+fa5cc93a333e9f8b32c78dc7b5086bad0fd30ff7 7435ff16a8e209205102666ec79c7613fbd16c1d Travis Gorman <thefarbetween@me.com> 1472448037 -0500	commit: reply to messages
+7435ff16a8e209205102666ec79c7613fbd16c1d 4422ccdd8713a5491141a1924a5ceffdbb402351 Travis Gorman <thefarbetween@me.com> 1472477855 -0500	commit: data modeling for asset collection
+4422ccdd8713a5491141a1924a5ceffdbb402351 b883f9cd50b34c4464e6a8997d7d11f829a468f1 Travis Gorman <thefarbetween@me.com> 1472500832 -0500	commit: search asset collection

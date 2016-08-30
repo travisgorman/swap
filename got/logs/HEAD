@@ -1,0 +1,47 @@
+0000000000000000000000000000000000000000 97325952b0a0a021adfa720e1c1dbb601c17787a Travis Gorman <thefarbetween@me.com> 1471272001 -0500	commit (initial): init repo
+97325952b0a0a021adfa720e1c1dbb601c17787a 13d793e7c9f3a7deb75263d5d246423dbe45c1ba Travis Gorman <thefarbetween@me.com> 1471272440 -0500	commit: update readme
+13d793e7c9f3a7deb75263d5d246423dbe45c1ba a75e15b6a25e84da9367544b5ee1ebb610423b44 Travis Gorman <thefarbetween@me.com> 1471274359 -0500	commit: update readme
+a75e15b6a25e84da9367544b5ee1ebb610423b44 f9d036d29eaf2848d5a10570b44d5954d51a4b3b Travis Gorman <thefarbetween@me.com> 1471274506 -0500	commit: dependencies
+f9d036d29eaf2848d5a10570b44d5954d51a4b3b 5ad206d0c1d21887ed1b20885a1eae7f52802be6 Travis Gorman <thefarbetween@me.com> 1471275938 -0500	commit: kinvey settings
+5ad206d0c1d21887ed1b20885a1eae7f52802be6 95ccced6ba7ef097a90ed4512ffec5c4540c452b Travis Gorman <thefarbetween@me.com> 1471276664 -0500	commit: basic auth
+95ccced6ba7ef097a90ed4512ffec5c4540c452b dba9ab7feb277af0ad18af3121ddd3b1947223db Travis Gorman <thefarbetween@me.com> 1471443842 -0500	commit: user signup
+dba9ab7feb277af0ad18af3121ddd3b1947223db aa7994607705e908cfa3af6f4eff91d580aae56b Travis Gorman <thefarbetween@me.com> 1471449281 -0500	commit: fixed all re-naming squirks
+aa7994607705e908cfa3af6f4eff91d580aae56b 75f2d0353047c8bc602e0de86d633cdc8ad60cbe Travis Gorman <thefarbetween@me.com> 1471450984 -0500	commit: fixed login bugs
+75f2d0353047c8bc602e0de86d633cdc8ad60cbe 770690c2ffe70c33ea94e4eb549155c63c89826c Travis Gorman <thefarbetween@me.com> 1471451521 -0500	commit: fixed another login bug
+770690c2ffe70c33ea94e4eb549155c63c89826c b8156ccced3eec8a53c38eae99f1e808a22bf695 Travis Gorman <thefarbetween@me.com> 1471459123 -0500	commit: myProfile component
+b8156ccced3eec8a53c38eae99f1e808a22bf695 2a822a5a02cba5a986c23ed7b67753482ec2c4e3 Travis Gorman <thefarbetween@me.com> 1471467931 -0500	commit: edit my profile component
+2a822a5a02cba5a986c23ed7b67753482ec2c4e3 8a363c08e2efabc5fa0e00e121605d04c625827f Travis Gorman <thefarbetween@me.com> 1471472635 -0500	commit: edit myprofile works!
+8a363c08e2efabc5fa0e00e121605d04c625827f 7ed38d75d30b8b024b8e046ef3129b183277b194 Travis Gorman <thefarbetween@me.com> 1471536308 -0500	commit: quick commit in case i break everything while crackilackin
+7ed38d75d30b8b024b8e046ef3129b183277b194 511bafc9c3155f76523e78013e46a6b5f81ce934 Travis Gorman <thefarbetween@me.com> 1471612817 -0500	commit: search function
+511bafc9c3155f76523e78013e46a6b5f81ce934 5cc2f8acf1c3a50eca46349567d25021b3277aa3 Travis Gorman <thefarbetween@me.com> 1471615305 -0500	commit: search by skill and location
+5cc2f8acf1c3a50eca46349567d25021b3277aa3 22b9b9dc7f190523881e25395141c4c0574358ca Travis Gorman <thefarbetween@me.com> 1471617995 -0500	commit: freeze
+22b9b9dc7f190523881e25395141c4c0574358ca bbc9575bbf8fa97bdb63a8c3b39cef227e6e950b Travis Gorman <thefarbetween@me.com> 1471626830 -0500	commit: username on welcome
+bbc9575bbf8fa97bdb63a8c3b39cef227e6e950b e431e7d05ce7c92863aa44254732066fc51a224c Travis Gorman <thefarbetween@me.com> 1471700916 -0500	commit: user item component
+e431e7d05ce7c92863aa44254732066fc51a224c e431e7d05ce7c92863aa44254732066fc51a224c Travis Gorman <thefarbetween@me.com> 1471719402 -0500	checkout: moving from master to mistakeBranch
+e431e7d05ce7c92863aa44254732066fc51a224c 43fc340ceb2b7f96e3b8910e57c48e13848492be Travis Gorman <thefarbetween@me.com> 1471719410 -0500	commit: mistakes on this one
+43fc340ceb2b7f96e3b8910e57c48e13848492be e431e7d05ce7c92863aa44254732066fc51a224c Travis Gorman <thefarbetween@me.com> 1471719424 -0500	checkout: moving from mistakeBranch to master
+e431e7d05ce7c92863aa44254732066fc51a224c ed2df7479e5b953201a2dfe34bbf8ff3d7067855 Travis Gorman <thefarbetween@me.com> 1471730508 -0500	commit: returning useritems
+ed2df7479e5b953201a2dfe34bbf8ff3d7067855 3e63e2a8065c5fff0d5e25c4ccea32a1962b2f98 Travis Gorman <thefarbetween@me.com> 1471741000 -0500	commit: more search stuff
+3e63e2a8065c5fff0d5e25c4ccea32a1962b2f98 f7b433ab9b540397d5a9189b7595d14b615dc3aa Travis Gorman <thefarbetween@me.com> 1471792696 -0500	commit: search works and puts UserItems onto the page
+f7b433ab9b540397d5a9189b7595d14b615dc3aa 556231dadcc55052684bf503b50cdbde45bd2f86 Travis Gorman <thefarbetween@me.com> 1471816757 -0500	commit: useritem styles
+556231dadcc55052684bf503b50cdbde45bd2f86 632e5c359cc396d33739fa6f0f569fc2c5bfeea7 Travis Gorman <thefarbetween@me.com> 1471831908 -0500	commit: header component
+632e5c359cc396d33739fa6f0f569fc2c5bfeea7 5b76d041cc34e54acf8d1a9ff01c037ef7b6bdd2 Travis Gorman <thefarbetween@me.com> 1472147786 -0500	commit: pulling date from kinvey
+5b76d041cc34e54acf8d1a9ff01c037ef7b6bdd2 5b76d041cc34e54acf8d1a9ff01c037ef7b6bdd2 Travis Gorman <thefarbetween@me.com> 1472147836 -0500	checkout: moving from master to sendMessage
+5b76d041cc34e54acf8d1a9ff01c037ef7b6bdd2 9369a3bedb64db37c23291888fd80ec1e5f5367d Travis Gorman <thefarbetween@me.com> 1472149338 -0500	commit: open and close send message on user item
+9369a3bedb64db37c23291888fd80ec1e5f5367d 732834e8d15041090fc99d79b96c4fad7954f31e Travis Gorman <thefarbetween@me.com> 1472169391 -0500	commit: message data ready to post
+732834e8d15041090fc99d79b96c4fad7954f31e 7f3cb31bc1e4441fc912ba0c8da54cb4d81f0acd Travis Gorman <thefarbetween@me.com> 1472170118 -0500	commit: sender id attributes
+7f3cb31bc1e4441fc912ba0c8da54cb4d81f0acd 07da29f4850a3e49f948edc2e0c962ef4f4cc8b6 Travis Gorman <thefarbetween@me.com> 1472187803 -0500	commit: handler pushes session data to collection handler
+07da29f4850a3e49f948edc2e0c962ef4f4cc8b6 45453b70c54d31c77f6ded542c6d2ca6ce148857 Travis Gorman <thefarbetween@me.com> 1472255444 -0500	commit: sendMessage functional
+45453b70c54d31c77f6ded542c6d2ca6ce148857 4e0a2caefa0fccc815ef70e454d700ee6cf57b19 Travis Gorman <thefarbetween@me.com> 1472317906 -0500	commit: render messages
+4e0a2caefa0fccc815ef70e454d700ee6cf57b19 ba2a92edf2f98efbdecb38aa8bc48bd4b665cc9d Travis Gorman <thefarbetween@me.com> 1472326202 -0500	commit: inbox is fully functional
+ba2a92edf2f98efbdecb38aa8bc48bd4b665cc9d ba2a92edf2f98efbdecb38aa8bc48bd4b665cc9d Travis Gorman <thefarbetween@me.com> 1472346085 -0500	checkout: moving from sendMessage to createAsset
+ba2a92edf2f98efbdecb38aa8bc48bd4b665cc9d e68c4f26bb91e4ba90552f55a7560abaa6167233 Travis Gorman <thefarbetween@me.com> 1472346139 -0500	commit: offers and asset models
+e68c4f26bb91e4ba90552f55a7560abaa6167233 f8caa4617eb6f1ec6c2aa47a28a02529203c29ed Travis Gorman <thefarbetween@me.com> 1472353213 -0500	commit: post assets to asset collection
+f8caa4617eb6f1ec6c2aa47a28a02529203c29ed f30778942a01a2bcc4d272b2976fd150e235632e Travis Gorman <thefarbetween@me.com> 1472417144 -0500	commit: back to kinvey auth
+f30778942a01a2bcc4d272b2976fd150e235632e 92aa352c40f5b40bfa309698da97aa39e1e9f4db Travis Gorman <thefarbetween@me.com> 1472426599 -0500	commit: fixed authentication - login
+92aa352c40f5b40bfa309698da97aa39e1e9f4db fa5cc93a333e9f8b32c78dc7b5086bad0fd30ff7 Travis Gorman <thefarbetween@me.com> 1472431179 -0500	commit: all authentication works
+fa5cc93a333e9f8b32c78dc7b5086bad0fd30ff7 5b76d041cc34e54acf8d1a9ff01c037ef7b6bdd2 Travis Gorman <thefarbetween@me.com> 1472431214 -0500	checkout: moving from createAsset to master
+5b76d041cc34e54acf8d1a9ff01c037ef7b6bdd2 fa5cc93a333e9f8b32c78dc7b5086bad0fd30ff7 Travis Gorman <thefarbetween@me.com> 1472433847 -0500	checkout: moving from master to createAsset
+fa5cc93a333e9f8b32c78dc7b5086bad0fd30ff7 7435ff16a8e209205102666ec79c7613fbd16c1d Travis Gorman <thefarbetween@me.com> 1472448037 -0500	commit: reply to messages
+7435ff16a8e209205102666ec79c7613fbd16c1d 4422ccdd8713a5491141a1924a5ceffdbb402351 Travis Gorman <thefarbetween@me.com> 1472477855 -0500	commit: data modeling for asset collection
+4422ccdd8713a5491141a1924a5ceffdbb402351 b883f9cd50b34c4464e6a8997d7d11f829a468f1 Travis Gorman <thefarbetween@me.com> 1472500832 -0500	commit: search asset collection

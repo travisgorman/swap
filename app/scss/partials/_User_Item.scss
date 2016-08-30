@@ -1,0 +1,97 @@
+// Default, Mobile First Styles
+.UserItemView {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  .User_Item {
+    margin: 2.5rem 1rem;
+    padding: 1rem;
+    background: #1C272D;
+    border-radius: 0.25rem;
+    width: 500px;
+    min-width: 18rem;
+    font-size: 10px;
+    box-shadow: 0 0 0.25rem rgba( black, 0.3 );
+   }
+  .avatar {
+    border-radius: 100%;
+    width: 8rem;
+    height: 8rem;
+    margin: 1.5rem auto;
+  }
+  .user_info {
+    margin: 0;
+    text-align: center;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    color: #fff;
+    h1 {
+     
+      font-size: 1.25rem;
+    }
+    h2 {
+      font-weight: light;
+      font-size: 1rem;
+    }
+    h4 {
+      line-height: 2.5;
+      font-size: .5rem;
+    }
+
+  }
+  .message_button {
+    margin: .7rem;
+    padding: .7rem;
+    font-size: 2.4em;
+    text-align: center;
+    background: palevioletred;
+    color: #fff;
+    border-radius: 0.25rem;
+    box-shadow: 0 0 2px rgba(grey, 0.5);
+    transition: all 0.2s;
+    &:hover {
+      cursor: pointer;
+      background: darken(orange, 10%);
+    }
+  }
+}
+
+// Desktop Overriding Styles
+@media (min-width: 768px) {
+  .UserItemView {
+    .User_Item {
+      display: flex;
+      align-items: center;
+      width: 50rem;
+      height: 16rem;
+      padding: 0;
+    }
+    .avatar, .user_info, .message_button {
+      flex: 1;
+    }
+    .avatar {
+      max-width: 50%;
+      // background-position: 50% 45%;
+      height: 100%;
+      margin: 0;
+      border-radius: 100%;
+      border: 0;
+    }
+    .user_info {
+      text-align: center;
+      height: 100%;
+      border-radius: 0;
+      h1 {
+        font-size: 2.4em;
+      }
+    }
+    .message_button {
+      padding: 1rem;
+      font-size: 1.6em;
+      max-width: 10rem;
+    }
+  }
+}

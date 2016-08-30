@@ -1,0 +1,8 @@
+0000000000000000000000000000000000000000 5b76d041cc34e54acf8d1a9ff01c037ef7b6bdd2 Travis Gorman <thefarbetween@me.com> 1472147836 -0500	branch: Created from HEAD
+5b76d041cc34e54acf8d1a9ff01c037ef7b6bdd2 9369a3bedb64db37c23291888fd80ec1e5f5367d Travis Gorman <thefarbetween@me.com> 1472149338 -0500	commit: open and close send message on user item
+9369a3bedb64db37c23291888fd80ec1e5f5367d 732834e8d15041090fc99d79b96c4fad7954f31e Travis Gorman <thefarbetween@me.com> 1472169391 -0500	commit: message data ready to post
+732834e8d15041090fc99d79b96c4fad7954f31e 7f3cb31bc1e4441fc912ba0c8da54cb4d81f0acd Travis Gorman <thefarbetween@me.com> 1472170118 -0500	commit: sender id attributes
+7f3cb31bc1e4441fc912ba0c8da54cb4d81f0acd 07da29f4850a3e49f948edc2e0c962ef4f4cc8b6 Travis Gorman <thefarbetween@me.com> 1472187803 -0500	commit: handler pushes session data to collection handler
+07da29f4850a3e49f948edc2e0c962ef4f4cc8b6 45453b70c54d31c77f6ded542c6d2ca6ce148857 Travis Gorman <thefarbetween@me.com> 1472255444 -0500	commit: sendMessage functional
+45453b70c54d31c77f6ded542c6d2ca6ce148857 4e0a2caefa0fccc815ef70e454d700ee6cf57b19 Travis Gorman <thefarbetween@me.com> 1472317906 -0500	commit: render messages
+4e0a2caefa0fccc815ef70e454d700ee6cf57b19 ba2a92edf2f98efbdecb38aa8bc48bd4b665cc9d Travis Gorman <thefarbetween@me.com> 1472326202 -0500	commit: inbox is fully functional

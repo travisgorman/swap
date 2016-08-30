@@ -1,0 +1,27 @@
+@import 'variables';
+
+main {
+
+  li {
+    display: block;
+    border-radius: .5rem;
+    background-color: $ter;
+
+    h3 {
+      display: inline-block;
+      color: $white;
+      padding: .6rem;
+      margin-left: 4rem;
+      span {
+
+        font-weight: bold;
+        color:$black;
+      }
+    }
+    p {
+      color: $white;
+      background-color: lighten($ter, 5);
+      padding: .4rem;
+    }
+  }
+}

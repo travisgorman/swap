@@ -1,0 +1,24 @@
+header {
+  background-color: #54C4BB;
+  padding:0.5rem 1.5rem;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-around;;
+  align-items: center;
+  a:link, a:visited {
+    color: #215e59;
+    text-decoration: none;
+    border: 1px solid #215e59;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    a:hover {
+      background-color: desaturate(#54C4BB, 15),
+      lighten(#54C4BB, 20);
+      border-bottom: 2px solid #222C34;
+    };
+  }
+  .lilvatar {
+    background-color: #C54A3D;
+    border-radius: 100%;
+  }
+}

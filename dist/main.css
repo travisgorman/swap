@@ -1,0 +1,249 @@
+@charset "UTF-8";
+.UserItemView {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+  .UserItemView .User_Item {
+    margin: 2.5rem 1rem;
+    padding: 1rem;
+    background: #1C272D;
+    border-radius: 0.25rem;
+    width: 500px;
+    min-width: 18rem;
+    font-size: 10px;
+    box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.3); }
+  .UserItemView .avatar {
+    border-radius: 100%;
+    width: 8rem;
+    height: 8rem;
+    margin: 1.5rem auto; }
+  .UserItemView .user_info {
+    margin: 0;
+    text-align: center;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    color: #fff; }
+    .UserItemView .user_info h1 {
+      font-size: 1.25rem; }
+    .UserItemView .user_info h2 {
+      font-weight: light;
+      font-size: 1rem; }
+    .UserItemView .user_info h4 {
+      line-height: 2.5;
+      font-size: .5rem; }
+  .UserItemView .message_button {
+    margin: .7rem;
+    padding: .7rem;
+    font-size: 2.4em;
+    text-align: center;
+    background: palevioletred;
+    color: #fff;
+    border-radius: 0.25rem;
+    box-shadow: 0 0 2px rgba(128, 128, 128, 0.5);
+    transition: all 0.2s; }
+    .UserItemView .message_button:hover {
+      cursor: pointer;
+      background: #cc8400; }
+
+@media (min-width: 768px) {
+  .UserItemView .User_Item {
+    display: flex;
+    align-items: center;
+    width: 50rem;
+    height: 16rem;
+    padding: 0; }
+  .UserItemView .avatar, .UserItemView .user_info, .UserItemView .message_button {
+    flex: 1; }
+  .UserItemView .avatar {
+    max-width: 50%;
+    height: 100%;
+    margin: 0;
+    border-radius: 100%;
+    border: 0; }
+  .UserItemView .user_info {
+    text-align: center;
+    height: 100%;
+    border-radius: 0; }
+    .UserItemView .user_info h1 {
+      font-size: 2.4em; }
+  .UserItemView .message_button {
+    padding: 1rem;
+    font-size: 1.6em;
+    max-width: 10rem; } }
+@font-face {
+  font-family: 'fontello';
+  src: url("../font/fontello.eot?82345482");
+  src: url("../font/fontello.eot?82345482#iefix") format("embedded-opentype"), url("../font/fontello.woff2?82345482") format("woff2"), url("../font/fontello.woff?82345482") format("woff"), url("../font/fontello.ttf?82345482") format("truetype"), url("../font/fontello.svg?82345482#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?82345482#fontello') format('svg');
+  }
+}
+*/
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */ }
+
+.icon-mail:before {
+  content: '\e800'; }
+
+/* '' */
+.icon-user:before {
+  content: '\e801'; }
+
+/* '' */
+.icon-mail-1:before {
+  content: '\e802'; }
+
+/* '' */
+.icon-mail-2:before {
+  content: '\e803'; }
+
+/* '' */
+.icon-user-2:before {
+  content: '\e804'; }
+
+/* '' */
+.icon-mail-3:before {
+  content: '\e805'; }
+
+/* '' */
+.icon-user-1:before {
+  content: '\f061'; }
+
+/* '' */
+header {
+  background-color: #54C4BB;
+  padding: 0.5rem 1.5rem;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  header a:link, header a:visited {
+    color: #215e59;
+    text-decoration: none;
+    border: 1px solid #215e59;
+    padding: .5rem 1rem;
+    border-radius: .5rem; }
+    header a:link a:hover, header a:visited a:hover {
+      background-color: #65b3ad, #a0ded9;
+      border-bottom: 2px solid #222C34; }
+  header .lilvatar {
+    background-color: #C54A3D;
+    border-radius: 100%; }
+
+.search {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10%;
+  padding-right: 10%;
+  background: #263238;
+  padding: 1em 2em; }
+  .search .searchForm {
+    flex: 1;
+    text-align: center; }
+    .search .searchForm input {
+      margin: 1rem; }
+    .search .searchForm .browse {
+      flex: 1;
+      margin: auto;
+      align-items: center; }
+      .search .searchForm .browse form {
+        padding-top: 1rem; }
+
+.searchLocation {
+  font-size: 1.25rem; }
+
+.searchSkill {
+  font-size: 1.25rem; }
+
+.searchButton {
+  width: 128px;
+  border-radius: 0.25rem;
+  font-size: 1.5rem; }
+
+.SearchResults {
+  background: #455A64; }
+
+.modOuter {
+  display: flex;
+  flex-direction: column;
+  background-color: #C54A3D; }
+
+.modInner {
+  flex: 1;
+  width: 80%;
+  margin: auto; }
+
+nav {
+  float: right; }
+
+.closeModButton {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem; }
+
+main li {
+  display: block;
+  border-radius: .5rem;
+  background-color: #028090; }
+  main li h3 {
+    display: inline-block;
+    color: #eee;
+    padding: .6rem;
+    margin-left: 4rem; }
+    main li h3 span {
+      font-weight: bold;
+      color: #222; }
+  main li p {
+    color: #eee;
+    background-color: #0296a9;
+    padding: .4rem; }
+
+html, body {
+  margin: 0;
+  height: 100%;
+  background: #eee;
+  font-family: helvetica, arial, sans-serif;
+  font-size: 16px;
+  text-decoration: none; }
+  html *, body * {
+    box-sizing: border-box;
+    list-style-type: none; }
+
+.bs-1 {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,25 @@
+0000000000000000000000000000000000000000 97325952b0a0a021adfa720e1c1dbb601c17787a Travis Gorman <thefarbetween@me.com> 1471272001 -0500	commit (initial): init repo
+97325952b0a0a021adfa720e1c1dbb601c17787a 13d793e7c9f3a7deb75263d5d246423dbe45c1ba Travis Gorman <thefarbetween@me.com> 1471272440 -0500	commit: update readme
+13d793e7c9f3a7deb75263d5d246423dbe45c1ba a75e15b6a25e84da9367544b5ee1ebb610423b44 Travis Gorman <thefarbetween@me.com> 1471274359 -0500	commit: update readme
+a75e15b6a25e84da9367544b5ee1ebb610423b44 f9d036d29eaf2848d5a10570b44d5954d51a4b3b Travis Gorman <thefarbetween@me.com> 1471274506 -0500	commit: dependencies
+f9d036d29eaf2848d5a10570b44d5954d51a4b3b 5ad206d0c1d21887ed1b20885a1eae7f52802be6 Travis Gorman <thefarbetween@me.com> 1471275938 -0500	commit: kinvey settings
+5ad206d0c1d21887ed1b20885a1eae7f52802be6 95ccced6ba7ef097a90ed4512ffec5c4540c452b Travis Gorman <thefarbetween@me.com> 1471276664 -0500	commit: basic auth
+95ccced6ba7ef097a90ed4512ffec5c4540c452b dba9ab7feb277af0ad18af3121ddd3b1947223db Travis Gorman <thefarbetween@me.com> 1471443842 -0500	commit: user signup
+dba9ab7feb277af0ad18af3121ddd3b1947223db aa7994607705e908cfa3af6f4eff91d580aae56b Travis Gorman <thefarbetween@me.com> 1471449281 -0500	commit: fixed all re-naming squirks
+aa7994607705e908cfa3af6f4eff91d580aae56b 75f2d0353047c8bc602e0de86d633cdc8ad60cbe Travis Gorman <thefarbetween@me.com> 1471450984 -0500	commit: fixed login bugs
+75f2d0353047c8bc602e0de86d633cdc8ad60cbe 770690c2ffe70c33ea94e4eb549155c63c89826c Travis Gorman <thefarbetween@me.com> 1471451521 -0500	commit: fixed another login bug
+770690c2ffe70c33ea94e4eb549155c63c89826c b8156ccced3eec8a53c38eae99f1e808a22bf695 Travis Gorman <thefarbetween@me.com> 1471459123 -0500	commit: myProfile component
+b8156ccced3eec8a53c38eae99f1e808a22bf695 2a822a5a02cba5a986c23ed7b67753482ec2c4e3 Travis Gorman <thefarbetween@me.com> 1471467931 -0500	commit: edit my profile component
+2a822a5a02cba5a986c23ed7b67753482ec2c4e3 8a363c08e2efabc5fa0e00e121605d04c625827f Travis Gorman <thefarbetween@me.com> 1471472635 -0500	commit: edit myprofile works!
+8a363c08e2efabc5fa0e00e121605d04c625827f 7ed38d75d30b8b024b8e046ef3129b183277b194 Travis Gorman <thefarbetween@me.com> 1471536308 -0500	commit: quick commit in case i break everything while crackilackin
+7ed38d75d30b8b024b8e046ef3129b183277b194 511bafc9c3155f76523e78013e46a6b5f81ce934 Travis Gorman <thefarbetween@me.com> 1471612817 -0500	commit: search function
+511bafc9c3155f76523e78013e46a6b5f81ce934 5cc2f8acf1c3a50eca46349567d25021b3277aa3 Travis Gorman <thefarbetween@me.com> 1471615305 -0500	commit: search by skill and location
+5cc2f8acf1c3a50eca46349567d25021b3277aa3 22b9b9dc7f190523881e25395141c4c0574358ca Travis Gorman <thefarbetween@me.com> 1471617995 -0500	commit: freeze
+22b9b9dc7f190523881e25395141c4c0574358ca bbc9575bbf8fa97bdb63a8c3b39cef227e6e950b Travis Gorman <thefarbetween@me.com> 1471626830 -0500	commit: username on welcome
+bbc9575bbf8fa97bdb63a8c3b39cef227e6e950b e431e7d05ce7c92863aa44254732066fc51a224c Travis Gorman <thefarbetween@me.com> 1471700916 -0500	commit: user item component
+e431e7d05ce7c92863aa44254732066fc51a224c ed2df7479e5b953201a2dfe34bbf8ff3d7067855 Travis Gorman <thefarbetween@me.com> 1471730508 -0500	commit: returning useritems
+ed2df7479e5b953201a2dfe34bbf8ff3d7067855 3e63e2a8065c5fff0d5e25c4ccea32a1962b2f98 Travis Gorman <thefarbetween@me.com> 1471741000 -0500	commit: more search stuff
+3e63e2a8065c5fff0d5e25c4ccea32a1962b2f98 f7b433ab9b540397d5a9189b7595d14b615dc3aa Travis Gorman <thefarbetween@me.com> 1471792696 -0500	commit: search works and puts UserItems onto the page
+f7b433ab9b540397d5a9189b7595d14b615dc3aa 556231dadcc55052684bf503b50cdbde45bd2f86 Travis Gorman <thefarbetween@me.com> 1471816757 -0500	commit: useritem styles
+556231dadcc55052684bf503b50cdbde45bd2f86 632e5c359cc396d33739fa6f0f569fc2c5bfeea7 Travis Gorman <thefarbetween@me.com> 1471831908 -0500	commit: header component
+632e5c359cc396d33739fa6f0f569fc2c5bfeea7 5b76d041cc34e54acf8d1a9ff01c037ef7b6bdd2 Travis Gorman <thefarbetween@me.com> 1472147786 -0500	commit: pulling date from kinvey

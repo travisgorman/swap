@@ -1,0 +1,21 @@
+.myProfile{
+  display: flex;
+  flex-direction: row;
+  .photo {
+    flex: 1;
+    width: 50%;
+    height: 50%;
+  }
+  .info {
+    width: 50%;
+    height: 50%;
+  }
+  .skills {
+    width: 50%;
+    height: 50%;
+  }
+  .description {
+    width: 50%;
+    height: 50%;
+  }
+}
