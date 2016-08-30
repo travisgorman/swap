@@ -11,9 +11,10 @@ export default React.createClass({
     return {};
   },
   handler(e){
-    let assets = store.userCollection.getAssets()
-    this.setState({allAssets: assets})
-    store.assetCollection.saveAssets(assets)
+    // let assets = store.userCollection.getAssets()
+    // this.setState({allAssets: assets})
+    // store.assetCollection.saveAssets(assets)
+    // console.log( 'called saveAssets from AddAssets', e );
   },
   updateState(){
     this.setState(store.assetCollection.toJSON());
@@ -22,7 +23,8 @@ export default React.createClass({
     store.assetCollection.on('change', this.updateState);
   },
   componentDidUpdate(){
-    console.log('this.state — ', this.state);
+    // console.log('this.state — ', this.state);
+    // store.assetCollection.saveAssets(this.state.allAssets)
   },
   componentWillUnmount(){
     store.assetCollection.off('change', this.updateState);

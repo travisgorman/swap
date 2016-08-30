@@ -1,5 +1,5 @@
 import Backbone from 'backbone'
-import store from '../store'
+// import store from '../store'
 import settings from '../settings'
 
 export default Backbone.Model.extend({

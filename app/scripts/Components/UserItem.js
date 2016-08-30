@@ -48,31 +48,25 @@ export default React.createClass({
           <input
             type="textArea"
             ref="message"
-            className="message"
             placeholder="Message..."
           />
           <input
             type="submit"
-            className="messageSendButton"
+            className="send btn"
             onClick={this.sendHandler } />
           <input
             type="submit"
             value="cancel"
-            className="messageCancelButton"
+            className="cancel btn"
             onClick={this.cancelSendMessage } />
         </div>
     )
   }
     return (
-      <div className="UserItemView">
-        <div
-          className="User_Item"
-          data-id={this.props.id}>
-          <img
-            className="avatar"
-            src={this.props.userphoto} />
+        <div className="User_Item" data-id={this.props.id}>
+          <img className="avatar" src={this.props.avatar} />
           <div className="user_info">
-            <h1> {this.props.username} </h1>
+            <h1> {this.props.name} </h1>
             <h2> {this.props.location} </h2>
           </div>
           <div
@@ -83,7 +77,6 @@ export default React.createClass({
           </div>
           {messageForm}
         </div>
-      </div>
     )
   }
 });

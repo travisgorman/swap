@@ -7,7 +7,6 @@ import  settings from './settings';
 
 
 $(document).ajaxSend(function(evt, xhr, jquerySettings){
-
   if ( localStorage.getItem( 'authtoken' )) {
     xhr.setRequestHeader( 'Authorization', 'Kinvey ' + localStorage.getItem('authtoken') );
   } else {
@@ -18,5 +17,9 @@ $(document).ajaxSend(function(evt, xhr, jquerySettings){
 if (localStorage.authtoken) {
   store.sessionModel.retrieve();
 }
+
+// store.userCollection.getAssets()
+// .then((assets) => {store.assetCollection.saveAssets(assets)})
+// console.log(assets);
 
 ReactDOM.render(router, document.getElementById('page'));

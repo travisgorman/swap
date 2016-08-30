@@ -29,7 +29,7 @@ export default React.createClass({
         <Header />
         <Search />
         <GetMessages />
-        <AddAssets />
+
       </div>
     )
   }
