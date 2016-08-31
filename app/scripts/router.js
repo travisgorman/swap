@@ -1,11 +1,11 @@
-import {Router, Route, browserHistory} from 'react-router';
-import React from 'react';
-import Login from './Components/Login';
-import Signup from './Components/Signup';
-import App from './Components/App';
-import MyProfile from './Components/MyProfile';
-import EditMyProfile from './Components/EditMyProfile';
-import GetMessages from './Components/GetMessages';
+import {Router, Route, browserHistory} from 'react-router'
+import React from 'react'
+import Login from './Components/Login'
+import Signup from './Components/Signup'
+import App from './Components/App'
+import MyProfile from './Components/MyProfile'
+import EditMyProfile from './Components/EditMyProfile'
+import GetMessages from './Components/GetMessages'
 
 export default (
   <Router history={browserHistory}>

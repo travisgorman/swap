@@ -7,10 +7,10 @@ export default Backbone.Model.extend({
   url: `https://baas.kinvey.com/user/${settings.appKey}`,
   defaults: {
     username: '',
-    userphoto: 'http://i.imgur.com/c6PPaWT.png',
+    avatar: 'http://i.imgur.com/c6PPaWT.png',
     location: '',
-    socialLink: [],
-    skills: [],
+    social: [],
+    assets: [],
     description: ''
   }
 });

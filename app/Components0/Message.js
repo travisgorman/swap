@@ -1,25 +1,27 @@
 import React from 'react'
-import $ from 'jquery'
 import store from '../store'
-import MessageCollection from '../Collections/MessageCollection'
 
 export default React.createClass({
-  getInitialState: function () {
+  getInitialState(){
     return {
-      who: this.props.username,
-      whois: this.props.id,
+      fromWho: this.props.username,
+      fromWhoId: this.props.id,
       messageForm: false,
       messageSent: false
-    }
+    };
   },
-  componentDidMount: function () {
-    // console.log(this.state);
+  updateState(){
+    this.setState(store.sessionModel.toJSON());
+  },
+  componentDidMount(){
+    store.sessionModel.on('change', this.updateState);
+    console.log(this.state);
   },
   showMessageForm: function () {
-    this.setState({
-      messageForm: true
-    })
-  },
+      this.setState({
+        messageForm: true
+      })
+    },
   cancelSendMessage: function (e) {
     e.preventDefault()
     this.setState({
@@ -40,7 +42,10 @@ export default React.createClass({
         messageForm: false
       });
   },
-  render: function() {
+  componentWillUnmount(){
+    store.sessionModel.off('change', this.updateState);
+  },
+  render: function () {
     let messageForm, messageSent, messageButton
     if (this.state.messageForm) {
       messageForm = (
@@ -48,33 +53,34 @@ export default React.createClass({
           <input
             type="textArea"
             ref="message"
-            placeholder="Message..." />
+            className="message"
+            placeholder="Message..."
+          />
           <input
             type="submit"
-            className="send btn"
+            className="messageSendButton"
             onClick={this.sendHandler } />
           <input
             type="submit"
             value="cancel"
-            className="cancel btn"
+            className="messageCancelButton"
             onClick={this.cancelSendMessage } />
         </div>
     )
   }
     return (
-        <div className="User_Item" data-id={this.props.id}>
-          <img className="avatar" src={this.props.avatar} />
-          <div className="user_info">
-            <h1> {this.props.name} </h1>
-            <h2> {this.props.location} </h2>
-          </div>
+      <li className="message bs-1">
+        <h3>{this.props.sender}</h3>
+        <main className="body">
+          <p>{this.props.body}</p>
           <div
-            className="btn-lg"
+            className="message_button"
+            id="message_button"
             onClick={this.showMessageForm} >
-            Message
+            reply
           </div>
-          {messageForm}
-        </div>
+        </main>
+      </li>
     )
   }
-});
+})

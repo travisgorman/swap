@@ -12,9 +12,6 @@ export default React.createClass({
       messageSent: false
     }
   },
-  componentDidMount: function () {
-    // console.log(this.state);
-  },
   showMessageForm: function () {
     this.setState({
       messageForm: true
@@ -62,19 +59,20 @@ export default React.createClass({
     )
   }
     return (
-        <div className="User_Item" data-id={this.props.id}>
-          <img className="avatar" src={this.props.avatar} />
-          <div className="user_info">
-            <h1> {this.props.name} </h1>
-            <h2> {this.props.location} </h2>
-          </div>
-          <div
-            className="btn-lg"
-            onClick={this.showMessageForm} >
-            Message
-          </div>
-          {messageForm}
+      <div className="User_Item"
+        data-id={this.props.id}>
+        <img className="avatar"
+          src={this.props.avatar} />
+        <div className="user_info">
+          <h1>{this.props.name}</h1>
+          <h2>{this.props.location}</h2>
         </div>
+        <div className="message_button"
+          onClick={this.showMessageForm} >
+          Message
+      </div>
+        {messageForm}
+      </div>
     )
   }
 });

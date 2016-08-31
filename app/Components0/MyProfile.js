@@ -22,7 +22,6 @@ export default React.createClass({
 //     this.setState(store.assetCollection.toJSON());
 //   },
   render: function () {
-    console.log(this.state);
       return (
         <div className="myProfile">
           <img src={this.state.avatar}/>
