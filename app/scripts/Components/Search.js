@@ -1,6 +1,7 @@
 import React from 'react'
 import UserItem from './UserItem'
 import store from '../store'
+// import $ from 'jquery'
 
 export default React.createClass({
   getInitialState () {
@@ -10,9 +11,7 @@ export default React.createClass({
     store.userCollection.on('update change', this.updateState)
   },
   updateState: function () {
-    this.setState({
-      users: store.userCollection.toJSON()
-    })
+    this.setState({ users: store.userCollection.toJSON() })
   },
   componendWillUnmount: function () {
     store.userCollection.off('update change', this.updateState)
@@ -31,19 +30,18 @@ export default React.createClass({
       users: store.userCollection.findInCity(what)
     })
   },
-
   render () {
     let mySearchResults = this.state.users
-      .map((result, i) => {
-        return (
-          <UserItem
-            key={i}
-            id={result._id}
-            avatar={result.avatar}
-            name={result.name}
-            location={result.location} />
+    .map((result, i) => {
+      return (
+        <UserItem
+          key={i}
+          id={result._id}
+          avatar={result.avatar}
+          name={result.name}
+          location={result.location} />
         )
-      })
+    })
     return (
       <div className="search">
         <form onSubmit={this.searchHandler} >

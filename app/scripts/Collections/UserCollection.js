@@ -31,7 +31,11 @@ export default Backbone.Collection.extend({
       store.userCollection.fetch({
         data: {
           query: JSON.stringify({
-            city: what
+            $or: [
+              {city: what},
+              {state: what},
+              {location: what}
+            ]
           })
         },
         success: (response) => {

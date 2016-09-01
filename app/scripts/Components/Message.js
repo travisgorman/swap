@@ -8,20 +8,20 @@ export default React.createClass({
       fromWhoId: this.props.id,
       messageForm: false,
       messageSent: false
-    };
+    }
   },
-  updateState(){
-    this.setState(store.sessionModel.toJSON());
+  updateState () {
+    this.setState(store.sessionModel.toJSON())
   },
-  componentDidMount(){
-    store.sessionModel.on('change', this.updateState);
-    console.log(this.state);
+  componentDidMount () {
+    store.sessionModel.on('change', this.updateState)
+    console.log(this.state)
   },
   showMessageForm: function () {
-      this.setState({
-        messageForm: true
-      })
-    },
+    this.setState({
+      messageForm: true
+    })
+  },
   cancelSendMessage: function (e) {
     e.preventDefault()
     this.setState({
@@ -30,20 +30,20 @@ export default React.createClass({
   },
   sendHandler: function (e) {
     e.preventDefault()
-      let message = this.refs.message.value
-      store.messageCollection
-        .sendMessage(
-          store.sessionModel.get('username'),
-          this.props.id,
-          message
-        )
-      this.setState({
-        messageSent: true,
-        messageForm: false
-      });
+    let message = this.refs.message.value
+    store.messageCollection
+      .sendMessage(
+        store.sessionModel.get('username'),
+        this.props.id,
+        message
+      )
+    this.setState({
+      messageSent: true,
+      messageForm: false
+    })
   },
-  componentWillUnmount(){
-    store.sessionModel.off('change', this.updateState);
+  componentWillUnmount () {
+    store.sessionModel.off('change', this.updateState)
   },
   render: function () {
     let messageForm, messageSent, messageButton
@@ -59,23 +59,22 @@ export default React.createClass({
           <input
             type="submit"
             className="messageSendButton"
-            onClick={this.sendHandler } />
+            onClick={this.sendHandler} />
           <input
             type="submit"
             value="cancel"
             className="messageCancelButton"
-            onClick={this.cancelSendMessage } />
+            onClick={this.cancelSendMessage} />
         </div>
     )
-  }
+    }
     return (
       <li className="message bs-1">
         <h3>{this.props.sender}</h3>
-        <main className="body">
+        <main className="messageBody">
           <p>{this.props.body}</p>
-          <div
-            className="message_button"
-            id="message_button"
+          <div className="sendButton"
+            id="sendButton"
             onClick={this.showMessageForm} >
             reply
           </div>

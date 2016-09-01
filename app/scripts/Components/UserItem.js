@@ -1,80 +1,64 @@
 import React from 'react'
-import $ from 'jquery'
 import store from '../store'
-import MessageCollection from '../Collections/MessageCollection'
 
 export default React.createClass({
   getInitialState: function () {
     return {
-      who: this.props.username,
-      whois: this.props.id,
       messageForm: false,
       messageSent: false
     }
   },
-  componentDidMount: function () {
-    // console.log(this.state);
-  },
   showMessageForm: function () {
-    this.setState({
-      messageForm: true
-    })
+    this.setState({ messageForm: true })
   },
   cancelSendMessage: function (e) {
     e.preventDefault()
-    this.setState({
-      messageForm: false
-    })
+    this.setState({ messageForm: false })
   },
   sendHandler: function (e) {
     e.preventDefault()
-      let message = this.refs.message.value
-      store.messageCollection
-        .sendMessage(
-          store.sessionModel.get('_id'),
-          this.props.id,
-          message
-        )
-      this.setState({
-        messageSent: true,
-        messageForm: false
-      });
+    let body = this.refs.body.value
+    let recipient = this.props.id
+    let sender = store.sessionModel.get('userId')
+    store.messageCollection.sendMessage(sender, recipient, body)
+    this.setState({ messageSent: true, messageForm: false })
   },
-  render: function() {
-    let messageForm, messageSent, messageButton
+  render: function () {
+    let messageForm
     if (this.state.messageForm) {
       messageForm = (
-        <div className="messageForm">
+        <form className="messageForm">
           <input
             type="textArea"
-            ref="message"
+            ref="body"
             placeholder="Message..." />
-          <input
+          <input className="send btn"
             type="submit"
-            className="send btn"
-            onClick={this.sendHandler } />
-          <input
+            onClick={this.sendHandler} />
+          <input className="cancel btn"
             type="submit"
             value="cancel"
-            className="cancel btn"
-            onClick={this.cancelSendMessage } />
-        </div>
-    )
-  }
+            onClick={this.cancelSendMessage} />
+        </form>
+      )
+    }
     return (
-        <div className="User_Item" data-id={this.props.id}>
-          <img className="avatar" src={this.props.avatar} />
-          <div className="user_info">
-            <h1> {this.props.name} </h1>
-            <h2> {this.props.location} </h2>
-          </div>
-          <div
-            className="btn-lg"
-            onClick={this.showMessageForm} >
-            Message
-          </div>
-          {messageForm}
+      <div className="User_Item"
+        data-id={this.props.id}
+        data-first_name={this.props.first_name}>
+        <img className="avatar"
+          src={this.props.avatar} />
+        <div className="user_info">
+          <h1>{this.props.name}</h1>
+          <h2>{this.props.location}</h2>
+          <p>{this.props.description}</p>
         </div>
+        <div className="messageForm"
+          onClick={this.showMessageForm}>
+            Message
+        </div>
+          {messageForm}
+      </div>
     )
   }
-});
+})

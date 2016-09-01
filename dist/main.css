@@ -165,34 +165,9 @@ header {
     border-radius: 100%; }
 
 .search {
-  display: flex;
-  flex-direction: column;
-  padding-left: 10%;
-  padding-right: 10%;
   background: #263238;
-  padding: 1em 2em; }
-  .search .searchForm {
-    flex: 1;
-    text-align: center; }
-    .search .searchForm input {
-      margin: 1rem; }
-    .search .searchForm .browse {
-      flex: 1;
-      margin: auto;
-      align-items: center; }
-      .search .searchForm .browse form {
-        padding-top: 1rem; }
-
-.searchLocation {
-  font-size: 1.25rem; }
-
-.searchSkill {
-  font-size: 1.25rem; }
-
-.searchButton {
-  width: 128px;
-  border-radius: 0.25rem;
-  font-size: 1.5rem; }
+  padding: 2em 2em;
+  margin: auto; }
 
 .SearchResults {
   background: #455A64; }
