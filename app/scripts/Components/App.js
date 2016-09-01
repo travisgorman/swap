@@ -1,13 +1,9 @@
 import React from 'react'
-import Header from './Header'
-import Search from './Search'
-import GetMessages from './GetMessages'
 import store from '../store'
+import Header from './Header'
 
 export default React.createClass({
-  getInitialState () {
-    return {}
-  },
+  getInitialState () { return {} },
   updateState () {
     this.setState(store.sessionModel.toJSON())
   },
@@ -22,10 +18,9 @@ export default React.createClass({
   },
   render () {
     return (
-      <div className="welcomePage">
+      <div>
         <Header />
-        <Search />
-        <GetMessages />
+        {this.props.children}
       </div>
     )
   }

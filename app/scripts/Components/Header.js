@@ -1,7 +1,8 @@
 import React from 'react'
-import { Link } from 'react-router'
 import store from '../store'
-import Shorti from 'shorti'
+// import Nav from './Nav'
+import Avatar from './Avatar'
+import { Link, browserHistory } from 'react-router'
 
 export default React.createClass({
   getInitialState () {
@@ -19,21 +20,17 @@ export default React.createClass({
   clickhandler: function (e) {
     store.sessionModel.logout()
   },
+  logoutHandler: (e) => { store.sessionModel.logout() },
   render: function () {
-    let lilPic
-    if (store.sessionModel.get('avatar')) {
-      lilPic = store.sessionModel.get('avatar')
-    } else {
-      lilPic = 'http://i.imgur.com/c6PPaWT.png'
-    }
-    let lilStyle = Shorti(`w-80 h-80 bg-url(${lilPic}) bg-cover`)
     return (
       <header>
+        <Avatar />
         <h1 className="logo">lazyfair</h1>
-        <Link to="getMessages"> inbox </Link>
-        <Link to="myProfile"> profile </Link>
-        <Link to="/" onClick={this.clickhandler}>logout</Link>
-        <div className="lilvatar" style={lilStyle}></div>
+        <nav>
+          <Link to="getMessages"> inbox </Link>
+          <Link to="myProfile"> profile </Link>
+          <Link to="logout" onClick={this.logoutHandler}>logout</Link>
+        </nav>
       </header>
     )
   }

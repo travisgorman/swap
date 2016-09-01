@@ -1,35 +1,19 @@
-import React from 'react';
-import store from '../store';
-import Header from './Header';
-
-// import myCollection from '../Collection/myCollection';
+import React from 'react'
+import store from '../store'
 
 export default React.createClass({
-//   getInitialState: function() {
-//     return {}
-// },
-//   componentDidMount: function () {
-//     store.assetCollection.on('change', this.updateState);
-//     console.log(this.state);
-//   },
-//   componentDidUpdate: function () {
-//     console.log(this.state);
-//   },
-//   componentWillUnmount: function () {
-//     store.assetCollection.off('change', this.updateState);
-//   },
-//   updateState: function () {
-//     this.setState(store.assetCollection.toJSON());
-//   },
   render: function () {
-    console.log(this.state);
-      return (
-        <div className="myProfile">
-          <img src={this.state.avatar}/>
-          <li>{this.state.name}</li>
-          <li>{this.state.city} {this.state.state}</li>
+    let myAvatar = store.sessionModel.get('avatar')
+    let myName = store.sessionModel.get('name')
+    let myCity = store.sessionModel.get('city')
+    let myState = store.sessionModel.get('state')
 
-        </div>
+    return (
+      <div className="myProfile">
+        <img src={myAvatar} />
+        <li>{myName}</li>
+        <li>{myCity} {myState}</li>
+      </div>
       )
   }
-});
+})
